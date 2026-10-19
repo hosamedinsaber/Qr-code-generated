@@ -25,6 +25,18 @@ main{min-width:0}.page-head{display:flex;justify-content:space-between;align-ite
 footer{text-align:center;color:var(--muted);font-size:11px;padding:8px 0 24px}
 @media(max-width:900px){.layout{grid-template-columns:1fr;padding:14px}.nav{display:grid;grid-template-columns:repeat(3,1fr)}.nav button{text-align:center;font-size:12px;padding:10px 4px}aside{position:static}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}}
 @media(max-width:520px){header{padding:14px}.brand h1{font-size:16px}.cards{gap:8px}.metric{padding:12px}.metric .value{font-size:18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.page-head h2{font-size:19px}.nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 </style>
 </head>
 <body>
