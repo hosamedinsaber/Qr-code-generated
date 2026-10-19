@@ -4,19 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>إدارة مصروفات العقار | النسخة التجريبية</title>
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-  
   
   <style>
 :root { color-scheme: light dark; --bg:light-dark(#f4f6f8,#111827); --surface:light-dark(#ffffff,#1f2937); --surface2:light-dark(#f8fafc,#273449); --text:light-dark(#182230,#f3f4f6); --muted:light-dark(#64748b,#aab5c5); --line:light-dark(#e2e8f0,#374151); --accent:light-dark(#176b57,#5ee0b5); --accentText:light-dark(#fff,#09251e); --danger:light-dark(#b42318,#ff9188); --shadow:0 8px 28px #0f172a0d; }
@@ -40,6 +27,20 @@ footer{text-align:center;color:var(--muted);font-size:11px;padding:8px 0 24px}
 @media(max-width:900px){.layout{grid-template-columns:1fr;padding:14px}.nav{display:grid;grid-template-columns:repeat(3,1fr)}.nav button{text-align:center;font-size:12px;padding:10px 4px}aside{position:static}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}}
 @media(max-width:520px){header{padding:14px}.brand h1{font-size:16px}.cards{gap:8px}.metric{padding:12px}.metric .value{font-size:18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.page-head h2{font-size:19px}.nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
+
+
+/* إخفاء أسهم خانات الأرقام */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+    
 </style>
 </head>
 <body>
