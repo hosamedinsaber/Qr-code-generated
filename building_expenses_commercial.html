@@ -81,8 +81,8 @@ input[type="number"]::-webkit-outer-spin-button {
 <section class="section" id="page-residents">
 <div class="page-head"><div><h2>الشقق والسكان</h2><p>إدارة بيانات الوحدات وقيمة الاشتراك الشهري</p></div><button class="btn primary" id="newResident">＋ إضافة شقة</button></div>
 <div class="panel" id="residentFormPanel" hidden><div class="panel-title"><h3 id="residentFormTitle">إضافة شقة</h3></div><form id="residentForm"><input type="hidden" id="residentId"><div class="form-grid">
-<div class="field"><label for="unit">رقم الشقة *</label><input id="unit" required placeholder="مثال: ١٠٢"></div>
-<div class="field"><label for="residentName">اسم المالك أو الساكن *</label><input id="residentName" required placeholder="الاسم"></div>
+<div class="field"><label for="unit">رقم الشقة *</label><input id="unit" required placeholder="مثال: ١٠٢" autocomplete="off"></div>
+<div class="field"><label for="residentName">اسم المالك أو الساكن *</label><input id="residentName" required placeholder="الاسم" autocomplete="off"></div>
 <div class="field"><label for="residentPhone">رقم الهاتف (اختياري)</label><input id="residentPhone" inputmode="tel" placeholder="رقم التواصل"></div>
 <div class="field"><label for="residentFee">الاشتراك الشهري (ج.م) *</label><input id="residentFee" type="number" min="0" step="0" required value="300"></div>
 </div><div class="form-actions"><button class="btn primary" type="submit">حفظ بيانات الشقة</button><button class="btn" type="button" id="cancelResident">إلغاء</button></div></form></div>
