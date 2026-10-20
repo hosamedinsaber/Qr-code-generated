@@ -17,20 +17,5 @@
 <section class="section alt" id="faq"><div class="wrap"><h2>أسئلة شائعة</h2><p class="lead">معلومات مهمة قبل استخدام التطبيق.</p><div class="faq"><details><summary>هل البيانات محفوظة على الإنترنت تلقائيًا؟</summary><p>لا. النسخة الحالية تحفظ البيانات داخل المتصفح على الجهاز المستخدم. قد تفقدها عند مسح بيانات المتصفح أو تغيير الجهاز؛ لذلك نزّل نسخة احتياطية بانتظام.</p></details><details><summary>هل يمكن فتح نفس البيانات من هاتفين؟</summary><p>ليس تلقائيًا في النسخة الحالية. يمكن نقل ملف النسخة الاحتياطية يدويًا، لكن لا توجد مزامنة مشتركة مباشرة بين الأجهزة.</p></details><details><summary>هل يمكنني استخدامه قبل الشراء؟</summary><p>نعم، جرّب النسخة التجريبية ببيانات وهمية أولًا وتأكد من أن الوظائف تناسب احتياجك.</p></details><details><summary>كيف أطلب نسخة مخصصة؟</summary><p>انسخ رسالة طلب التخصيص من قسم الباقات، ثم أرسلها عبر وسيلة التواصل التي تتفق عليها مع مقدم الخدمة.</p></details></div></div></section>
 <section class="wrap" style="padding-bottom:42px"><div class="cta"><div><h2 style="text-align:right;margin:0">ابدأ بتنظيم حسابات عمارتك</h2><p>جرّب الوظائف الأساسية أولًا، ثم حدّد ما تحتاجه من تخصيص.</p></div><a class="btn" href="building_expenses_commercial.html">افتح التطبيق التجريبي ←</a></div></section>
 </main><footer class="wrap">دفتر العقار · نموذج أولي مستقل · راجع السجلات مع الإيصالات الفعلية ولا تعتمد عليه وحده كدفتر محاسبي رسمي.</footer>
-
-<script>
-function copyOrder(text) {
-  const recipient = "gaballahosam@gmail.com";
-  const subject = "طلب شراء تطبيق إدارة مصروفات العقار";
-  const body = text || "مرحبًا، أرغب في شراء تطبيق إدارة مصروفات العقار.";
-
-  const mailto =
-    "mailto:" + recipient +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
-
-  window.location.href = mailto;
-}
-</script>
-</body>
-</html>
+<script>function copyOrder(text){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>alert('تم نسخ الرسالة. أرسلها إلى وسيلة التواصل المتفق عليها.')).catch(()=>fallbackCopy(text));}else fallbackCopy(text)}function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');alert('تم نسخ الرسالة. أرسلها إلى وسيلة التواصل المتفق عليها.')}catch(e){prompt('انسخ الرسالة التالية:',text)}t.remove()}</script>
+</body></html>
