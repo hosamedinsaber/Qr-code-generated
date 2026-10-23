@@ -136,13 +136,15 @@ aside .notice{background:#ffffff0d;color:#d8e9e3;border:1px solid #ffffff1a}
 .package-badge{font-size:11px;font-weight:600;display:inline-block;padding:5px 10px;border-radius:20px;color:#fff2cc;border:1px solid #d6b77966;background:#ffffff12;vertical-align:middle;margin-inline-start:8px;line-height:1.5}
 [data-page="improvements"],[data-go="improvements"],[data-transfer-col],#page-improvements,#collectionTransferPanel,.package-improvements{display:none!important}
 [data-page="guide"],[data-go="guide"],#page-guide,[data-report="account"],[data-report="annual"],[data-report="movements"],#accountPanel,#annualPanel,#movementsPanel{display:none!important}
+
+.sales-return{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-decoration:none;line-height:1.6;text-align:center;font-weight:700}.nav-sales-return{margin-top:8px;padding:12px;border:1px solid #d6b77966;border-radius:9px;color:#fff2cc;background:#ffffff0d}.sales-return:focus-visible{outline:3px solid var(--gold);outline-offset:3px}@media(max-width:900px){.nav-sales-return{grid-column:1/-1}}@media print{.sales-return{display:none!important}}
 </style>
 </head>
 <body class="package-trial">
 <div id="app">
 <header>
  <div class="brand"><div class="logo">⌂</div><div><h1>دفتر العقار <span class="package-badge">النسخة التجريبية</span></h1><p id="buildingSubtitle">لوحة متابعة التحصيل والصيانة</p></div></div>
- <div class="top-actions"><button class="btn" id="exportBtn">تنزيل نسخة احتياطية</button><button class="btn primary" id="quickCollect">＋ تسجيل تحصيل</button></div>
+ <div class="top-actions"><a class="btn primary sales-return" href="sales.html">العودة لصفحة المبيعات ←</a><button class="btn" id="exportBtn">تنزيل نسخة احتياطية</button><button class="btn primary" id="quickCollect">＋ تسجيل تحصيل</button></div>
 </header>
 <div class="layout">
 <aside><nav class="nav" aria-label="القائمة الرئيسية">
@@ -158,7 +160,7 @@ aside .notice{background:#ffffff0d;color:#d8e9e3;border:1px solid #ffffff1a}
  <button type="button" data-report="account">◦　كشف حساب شقة</button>
  <button type="button" data-report="annual">◦　تحصيلات السكان السنوية</button>
 </div>
-<button data-page="settings">⚙　إعدادات العقار</button>
+<button data-page="settings">⚙　إعدادات العقار</button><a class="sales-return nav-sales-return" href="sales.html">العودة لصفحة المبيعات ←</a>
 <button data-page="guide">▣　دليل المستخدم</button>
 </nav><div class="notice" style="margin-top:15px;margin-bottom:0"><b>تذكير مالي</b><br>سجّل كل تحصيل ومصروف فور حدوثه، واحتفظ بالإيصالات الأصلية.</div></aside>
 <main>
